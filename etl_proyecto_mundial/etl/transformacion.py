@@ -21,32 +21,32 @@ archivos_csv = ["city.csv", "country.csv", "countrylanguage.csv"]  # Lista de lo
 dataframes = {archivo.split(".")[0]: cargar_csv(archivo) for archivo in archivos_csv}
 
 
-# Función para generar reporte de calidad de datos
-def generar_reporte_calidad(dataframes, ruta_salida):
-    """
-    Genera un reporte de calidad de datos con valores nulos y porcentajes por DataFrame.
-    """
-    reportes = []
+# -----------------------------------------------------------------------------------------------------------------
+# 🔹 Completar los valores nulos en la columna 'District' con datos verificados externamente.
+# Se utiliza un diccionario con las correcciones y la función map() para asignar los valores correspondientes.
 
-    for nombre, df in dataframes.items():
-        if df is not None:
-            df_reporte = pd.DataFrame({
-                "Tabla": nombre,  # Nombre del DataFrame
-                "Columna": df.columns,
-                "Valores Nulos": df.isnull().sum(),
-                "Porcentaje Nulos (%)": (df.isnull().mean() * 100).round(2)
-            })
-            reportes.append(df_reporte)
-    
-    # Unir todos los reportes en un solo DataFrame
-    df_reporte_final = pd.concat(reportes, ignore_index=True)
+# Obtener el DataFrame de city
+df_city = dataframes.get("city")  
 
-    # Guardar el reporte como CSV
-    df_reporte_final.to_csv(ruta_salida, index=False)
-    print(f"\n📊 ✅ Reporte de calidad de datos guardado en: {ruta_salida}")
+# Verificar si se cargó correctamente antes de modificarlo
+if df_city is not None:
+# Definir los valores correctos para los distritos
 
-# 📂 Ruta donde se guardará el reporte
-ruta_reporte = os.path.join(os.path.dirname(__file__), "..", "datos_csv", "reporte_calidad.csv")
+    def corregir_distritos(df):
 
-# Generar el reporte de calidad antes de aplicar transformaciones
-generar_reporte_calidad(dataframes, ruta_reporte)
+        distritos_corregidos = {
+            3285: "Taiwan Province",
+            3293: "Kaohsiung",
+            3294: "Taoyuan",
+            3563: "Zulia"
+        }
+    # Reemplazar los valores nulos en la columna "District"
+        df.loc[df_city["ID"].isin(distritos_corregidos.keys()), "District"] = df_city["ID"].map(distritos_corregidos)
+
+    df_city = corregir_distritos(df_city)
+
+    # Guardar el CSV transformado
+    ruta_salida = os.path.join(os.path.dirname(__file__), "..", "datos_csv", "city.csv")
+    df_city.to_csv(ruta_salida, index=False)
+    print(f"\n✅ Archivo actualizado y guardado en: {ruta_salida}")
+
