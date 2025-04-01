@@ -67,7 +67,7 @@ with open(ruta_log, "a", encoding="utf-8") as log:  # "a" para agregar sin sobre
     if not df_paises__sin_gnpold.empty:
         log.write("\n🌎 PAÍSES SIN PRODUCTO NACIONAL BRUTO DE PERIODO ANTERIOR (GNPOld) REGISTRADO\n")
         log.write("-" * 80 + "\n")
-        log.write(df_paises_sin_indep.to_string(index=False))
+        log.write(df_paises__sin_gnpold.to_string(index=False))
         log.write("\n" + "-" * 80 + "\n")    
 
     # 🔹 Reporte de países sin el nombre del Jefe de Estado
@@ -75,7 +75,15 @@ with open(ruta_log, "a", encoding="utf-8") as log:  # "a" para agregar sin sobre
     if not df_paises_sin_jefeestado.empty:
         log.write("\n🌎 PAÍSES SIN JEFE DE ESTADO REGISTRADO\n")
         log.write("-" * 80 + "\n")
-        log.write(df_paises_sin_indep.to_string(index=False))
+        log.write(df_paises_sin_jefeestado.to_string(index=False))
+        log.write("\n" + "-" * 80 + "\n")
+
+    # 🔹 Reporte de países sin Code 2 de Estado
+    df_paises_sin_code2 = df_country[df_country["Code2"].isna()][["Code", "Name"]]
+    if not df_paises_sin_code2.empty:
+        log.write("\n🌎 PAÍSES SIN CODE2 REGISTRADO\n")
+        log.write("-" * 80 + "\n")
+        log.write(df_paises_sin_code2.to_string(index=False))
         log.write("\n" + "-" * 80 + "\n")
 
 print(f"\n✅ Reporte actualizado en: {ruta_log}")

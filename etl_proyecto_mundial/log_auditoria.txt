@@ -62,601 +62,82 @@ Code                                         Name                    Region
  WLF                            Wallis and Futuna                 Polynesia
 --------------------------------------------------------------------------------
 
-🏙️ CIUDADES SIN DISTRITO ANTES DE LA LIMPIEZA
+🌎 PAÍSES SIN PRODUCTO NACIONAL BRUTO DE PERIODO ANTERIOR (GNPOld) REGISTRADO
 --------------------------------------------------------------------------------
-  ID          Name CountryCode
-3285       Taiping         TWN
-3293        Taliao         TWN
-3294      Kueishan         TWN
-3563 Ciudad Losada         VEN
---------------------------------------------------------------------------------
-
-🌎 PAÍSES SIN AÑO DE INDEPENDENCIA REGISTRADO
---------------------------------------------------------------------------------
-Code                                         Name                    Region
- ABW                                        Aruba                 Caribbean
- AIA                                     Anguilla                 Caribbean
- ANT                         Netherlands Antilles                 Caribbean
- ASM                               American Samoa                 Polynesia
- ATA                                   Antarctica                Antarctica
- ATF                  French Southern territories                Antarctica
- BMU                                      Bermuda             North America
- BVT                                Bouvet Island                Antarctica
- CCK                      Cocos (Keeling) Islands Australia and New Zealand
- COK                                 Cook Islands                 Polynesia
- CXR                             Christmas Island Australia and New Zealand
- CYM                               Cayman Islands                 Caribbean
- ESH                               Western Sahara           Northern Africa
- FLK                             Falkland Islands             South America
- FRO                                Faroe Islands          Nordic Countries
- GIB                                    Gibraltar           Southern Europe
- GLP                                   Guadeloupe                 Caribbean
- GRL                                    Greenland             North America
- GUF                                French Guiana             South America
- GUM                                         Guam                Micronesia
- HKG                                    Hong Kong              Eastern Asia
- HMD            Heard Island and McDonald Islands                Antarctica
- IOT               British Indian Ocean Territory            Eastern Africa
- MAC                                        Macao              Eastern Asia
- MNP                     Northern Mariana Islands                Micronesia
- MSR                                   Montserrat                 Caribbean
- MTQ                                   Martinique                 Caribbean
- MYT                                      Mayotte            Eastern Africa
- NCL                                New Caledonia                 Melanesia
- NFK                               Norfolk Island Australia and New Zealand
- NIU                                         Niue                 Polynesia
- PCN                                     Pitcairn                 Polynesia
- PRI                                  Puerto Rico                 Caribbean
- PSE                                    Palestine               Middle East
- PYF                             French Polynesia                 Polynesia
- REU                                      Réunion            Eastern Africa
- SGS South Georgia and the South Sandwich Islands                Antarctica
- SHN                                 Saint Helena            Western Africa
- SJM                       Svalbard and Jan Mayen          Nordic Countries
- SPM                    Saint Pierre and Miquelon             North America
- TCA                     Turks and Caicos Islands                 Caribbean
- TKL                                      Tokelau                 Polynesia
- TMP                                   East Timor            Southeast Asia
- UMI         United States Minor Outlying Islands      Micronesia/Caribbean
- VGB                      Virgin Islands, British                 Caribbean
- VIR                         Virgin Islands, U.S.                 Caribbean
- WLF                            Wallis and Futuna                 Polynesia
---------------------------------------------------------------------------------
-
-🏙️ CIUDADES SIN DISTRITO ANTES DE LA LIMPIEZA
---------------------------------------------------------------------------------
-  ID          Name CountryCode
-3285       Taiping         TWN
-3293        Taliao         TWN
-3294      Kueishan         TWN
-3563 Ciudad Losada         VEN
---------------------------------------------------------------------------------
-
-🌎 PAÍSES SIN AÑO DE INDEPENDENCIA REGISTRADO
---------------------------------------------------------------------------------
-Code                                         Name                    Region
- ABW                                        Aruba                 Caribbean
- AIA                                     Anguilla                 Caribbean
- ANT                         Netherlands Antilles                 Caribbean
- ASM                               American Samoa                 Polynesia
- ATA                                   Antarctica                Antarctica
- ATF                  French Southern territories                Antarctica
- BMU                                      Bermuda             North America
- BVT                                Bouvet Island                Antarctica
- CCK                      Cocos (Keeling) Islands Australia and New Zealand
- COK                                 Cook Islands                 Polynesia
- CXR                             Christmas Island Australia and New Zealand
- CYM                               Cayman Islands                 Caribbean
- ESH                               Western Sahara           Northern Africa
- FLK                             Falkland Islands             South America
- FRO                                Faroe Islands          Nordic Countries
- GIB                                    Gibraltar           Southern Europe
- GLP                                   Guadeloupe                 Caribbean
- GRL                                    Greenland             North America
- GUF                                French Guiana             South America
- GUM                                         Guam                Micronesia
- HKG                                    Hong Kong              Eastern Asia
- HMD            Heard Island and McDonald Islands                Antarctica
- IOT               British Indian Ocean Territory            Eastern Africa
- MAC                                        Macao              Eastern Asia
- MNP                     Northern Mariana Islands                Micronesia
- MSR                                   Montserrat                 Caribbean
- MTQ                                   Martinique                 Caribbean
- MYT                                      Mayotte            Eastern Africa
- NCL                                New Caledonia                 Melanesia
- NFK                               Norfolk Island Australia and New Zealand
- NIU                                         Niue                 Polynesia
- PCN                                     Pitcairn                 Polynesia
- PRI                                  Puerto Rico                 Caribbean
- PSE                                    Palestine               Middle East
- PYF                             French Polynesia                 Polynesia
- REU                                      Réunion            Eastern Africa
- SGS South Georgia and the South Sandwich Islands                Antarctica
- SHN                                 Saint Helena            Western Africa
- SJM                       Svalbard and Jan Mayen          Nordic Countries
- SPM                    Saint Pierre and Miquelon             North America
- TCA                     Turks and Caicos Islands                 Caribbean
- TKL                                      Tokelau                 Polynesia
- TMP                                   East Timor            Southeast Asia
- UMI         United States Minor Outlying Islands      Micronesia/Caribbean
- VGB                      Virgin Islands, British                 Caribbean
- VIR                         Virgin Islands, U.S.                 Caribbean
- WLF                            Wallis and Futuna                 Polynesia
---------------------------------------------------------------------------------
-
-🏙️ CIUDADES SIN DISTRITO ANTES DE LA LIMPIEZA
---------------------------------------------------------------------------------
-  ID          Name CountryCode
-3285       Taiping         TWN
-3293        Taliao         TWN
-3294      Kueishan         TWN
-3563 Ciudad Losada         VEN
---------------------------------------------------------------------------------
-
-🌎 PAÍSES SIN AÑO DE INDEPENDENCIA REGISTRADO
---------------------------------------------------------------------------------
-Code                                         Name                    Region
- ABW                                        Aruba                 Caribbean
- AIA                                     Anguilla                 Caribbean
- ANT                         Netherlands Antilles                 Caribbean
- ASM                               American Samoa                 Polynesia
- ATA                                   Antarctica                Antarctica
- ATF                  French Southern territories                Antarctica
- BMU                                      Bermuda             North America
- BVT                                Bouvet Island                Antarctica
- CCK                      Cocos (Keeling) Islands Australia and New Zealand
- COK                                 Cook Islands                 Polynesia
- CXR                             Christmas Island Australia and New Zealand
- CYM                               Cayman Islands                 Caribbean
- ESH                               Western Sahara           Northern Africa
- FLK                             Falkland Islands             South America
- FRO                                Faroe Islands          Nordic Countries
- GIB                                    Gibraltar           Southern Europe
- GLP                                   Guadeloupe                 Caribbean
- GRL                                    Greenland             North America
- GUF                                French Guiana             South America
- GUM                                         Guam                Micronesia
- HKG                                    Hong Kong              Eastern Asia
- HMD            Heard Island and McDonald Islands                Antarctica
- IOT               British Indian Ocean Territory            Eastern Africa
- MAC                                        Macao              Eastern Asia
- MNP                     Northern Mariana Islands                Micronesia
- MSR                                   Montserrat                 Caribbean
- MTQ                                   Martinique                 Caribbean
- MYT                                      Mayotte            Eastern Africa
- NCL                                New Caledonia                 Melanesia
- NFK                               Norfolk Island Australia and New Zealand
- NIU                                         Niue                 Polynesia
- PCN                                     Pitcairn                 Polynesia
- PRI                                  Puerto Rico                 Caribbean
- PSE                                    Palestine               Middle East
- PYF                             French Polynesia                 Polynesia
- REU                                      Réunion            Eastern Africa
- SGS South Georgia and the South Sandwich Islands                Antarctica
- SHN                                 Saint Helena            Western Africa
- SJM                       Svalbard and Jan Mayen          Nordic Countries
- SPM                    Saint Pierre and Miquelon             North America
- TCA                     Turks and Caicos Islands                 Caribbean
- TKL                                      Tokelau                 Polynesia
- TMP                                   East Timor            Southeast Asia
- UMI         United States Minor Outlying Islands      Micronesia/Caribbean
- VGB                      Virgin Islands, British                 Caribbean
- VIR                         Virgin Islands, U.S.                 Caribbean
- WLF                            Wallis and Futuna                 Polynesia
---------------------------------------------------------------------------------
-
-🌎 PAÍSES SIN AÑO DE INDEPENDENCIA REGISTRADO
---------------------------------------------------------------------------------
-Code                                         Name                    Region
- ABW                                        Aruba                 Caribbean
- AIA                                     Anguilla                 Caribbean
- ANT                         Netherlands Antilles                 Caribbean
- ASM                               American Samoa                 Polynesia
- ATA                                   Antarctica                Antarctica
- ATF                  French Southern territories                Antarctica
- BMU                                      Bermuda             North America
- BVT                                Bouvet Island                Antarctica
- CCK                      Cocos (Keeling) Islands Australia and New Zealand
- COK                                 Cook Islands                 Polynesia
- CXR                             Christmas Island Australia and New Zealand
- CYM                               Cayman Islands                 Caribbean
- ESH                               Western Sahara           Northern Africa
- FLK                             Falkland Islands             South America
- FRO                                Faroe Islands          Nordic Countries
- GIB                                    Gibraltar           Southern Europe
- GLP                                   Guadeloupe                 Caribbean
- GRL                                    Greenland             North America
- GUF                                French Guiana             South America
- GUM                                         Guam                Micronesia
- HKG                                    Hong Kong              Eastern Asia
- HMD            Heard Island and McDonald Islands                Antarctica
- IOT               British Indian Ocean Territory            Eastern Africa
- MAC                                        Macao              Eastern Asia
- MNP                     Northern Mariana Islands                Micronesia
- MSR                                   Montserrat                 Caribbean
- MTQ                                   Martinique                 Caribbean
- MYT                                      Mayotte            Eastern Africa
- NCL                                New Caledonia                 Melanesia
- NFK                               Norfolk Island Australia and New Zealand
- NIU                                         Niue                 Polynesia
- PCN                                     Pitcairn                 Polynesia
- PRI                                  Puerto Rico                 Caribbean
- PSE                                    Palestine               Middle East
- PYF                             French Polynesia                 Polynesia
- REU                                      Réunion            Eastern Africa
- SGS South Georgia and the South Sandwich Islands                Antarctica
- SHN                                 Saint Helena            Western Africa
- SJM                       Svalbard and Jan Mayen          Nordic Countries
- SPM                    Saint Pierre and Miquelon             North America
- TCA                     Turks and Caicos Islands                 Caribbean
- TKL                                      Tokelau                 Polynesia
- TMP                                   East Timor            Southeast Asia
- UMI         United States Minor Outlying Islands      Micronesia/Caribbean
- VGB                      Virgin Islands, British                 Caribbean
- VIR                         Virgin Islands, U.S.                 Caribbean
- WLF                            Wallis and Futuna                 Polynesia
---------------------------------------------------------------------------------
-
-🌎 PAÍSES SIN AÑO DE INDEPENDENCIA REGISTRADO
---------------------------------------------------------------------------------
-Code                                         Name                    Region
- ABW                                        Aruba                 Caribbean
- AIA                                     Anguilla                 Caribbean
- ANT                         Netherlands Antilles                 Caribbean
- ASM                               American Samoa                 Polynesia
- ATA                                   Antarctica                Antarctica
- ATF                  French Southern territories                Antarctica
- BMU                                      Bermuda             North America
- BVT                                Bouvet Island                Antarctica
- CCK                      Cocos (Keeling) Islands Australia and New Zealand
- COK                                 Cook Islands                 Polynesia
- CXR                             Christmas Island Australia and New Zealand
- CYM                               Cayman Islands                 Caribbean
- ESH                               Western Sahara           Northern Africa
- FLK                             Falkland Islands             South America
- FRO                                Faroe Islands          Nordic Countries
- GIB                                    Gibraltar           Southern Europe
- GLP                                   Guadeloupe                 Caribbean
- GRL                                    Greenland             North America
- GUF                                French Guiana             South America
- GUM                                         Guam                Micronesia
- HKG                                    Hong Kong              Eastern Asia
- HMD            Heard Island and McDonald Islands                Antarctica
- IOT               British Indian Ocean Territory            Eastern Africa
- MAC                                        Macao              Eastern Asia
- MNP                     Northern Mariana Islands                Micronesia
- MSR                                   Montserrat                 Caribbean
- MTQ                                   Martinique                 Caribbean
- MYT                                      Mayotte            Eastern Africa
- NCL                                New Caledonia                 Melanesia
- NFK                               Norfolk Island Australia and New Zealand
- NIU                                         Niue                 Polynesia
- PCN                                     Pitcairn                 Polynesia
- PRI                                  Puerto Rico                 Caribbean
- PSE                                    Palestine               Middle East
- PYF                             French Polynesia                 Polynesia
- REU                                      Réunion            Eastern Africa
- SGS South Georgia and the South Sandwich Islands                Antarctica
- SHN                                 Saint Helena            Western Africa
- SJM                       Svalbard and Jan Mayen          Nordic Countries
- SPM                    Saint Pierre and Miquelon             North America
- TCA                     Turks and Caicos Islands                 Caribbean
- TKL                                      Tokelau                 Polynesia
- TMP                                   East Timor            Southeast Asia
- UMI         United States Minor Outlying Islands      Micronesia/Caribbean
- VGB                      Virgin Islands, British                 Caribbean
- VIR                         Virgin Islands, U.S.                 Caribbean
- WLF                            Wallis and Futuna                 Polynesia
---------------------------------------------------------------------------------
-
-🌎 PAÍSES SIN AÑO DE INDEPENDENCIA REGISTRADO
---------------------------------------------------------------------------------
-Code                                         Name                    Region
- ABW                                        Aruba                 Caribbean
- AIA                                     Anguilla                 Caribbean
- ANT                         Netherlands Antilles                 Caribbean
- ASM                               American Samoa                 Polynesia
- ATA                                   Antarctica                Antarctica
- ATF                  French Southern territories                Antarctica
- BMU                                      Bermuda             North America
- BVT                                Bouvet Island                Antarctica
- CCK                      Cocos (Keeling) Islands Australia and New Zealand
- COK                                 Cook Islands                 Polynesia
- CXR                             Christmas Island Australia and New Zealand
- CYM                               Cayman Islands                 Caribbean
- ESH                               Western Sahara           Northern Africa
- FLK                             Falkland Islands             South America
- FRO                                Faroe Islands          Nordic Countries
- GIB                                    Gibraltar           Southern Europe
- GLP                                   Guadeloupe                 Caribbean
- GRL                                    Greenland             North America
- GUF                                French Guiana             South America
- GUM                                         Guam                Micronesia
- HKG                                    Hong Kong              Eastern Asia
- HMD            Heard Island and McDonald Islands                Antarctica
- IOT               British Indian Ocean Territory            Eastern Africa
- MAC                                        Macao              Eastern Asia
- MNP                     Northern Mariana Islands                Micronesia
- MSR                                   Montserrat                 Caribbean
- MTQ                                   Martinique                 Caribbean
- MYT                                      Mayotte            Eastern Africa
- NCL                                New Caledonia                 Melanesia
- NFK                               Norfolk Island Australia and New Zealand
- NIU                                         Niue                 Polynesia
- PCN                                     Pitcairn                 Polynesia
- PRI                                  Puerto Rico                 Caribbean
- PSE                                    Palestine               Middle East
- PYF                             French Polynesia                 Polynesia
- REU                                      Réunion            Eastern Africa
- SGS South Georgia and the South Sandwich Islands                Antarctica
- SHN                                 Saint Helena            Western Africa
- SJM                       Svalbard and Jan Mayen          Nordic Countries
- SPM                    Saint Pierre and Miquelon             North America
- TCA                     Turks and Caicos Islands                 Caribbean
- TKL                                      Tokelau                 Polynesia
- TMP                                   East Timor            Southeast Asia
- UMI         United States Minor Outlying Islands      Micronesia/Caribbean
- VGB                      Virgin Islands, British                 Caribbean
- VIR                         Virgin Islands, U.S.                 Caribbean
- WLF                            Wallis and Futuna                 Polynesia
---------------------------------------------------------------------------------
-
-🌎 PAÍSES SIN AÑO DE INDEPENDENCIA REGISTRADO
---------------------------------------------------------------------------------
-Code                                         Name                    Region
- ABW                                        Aruba                 Caribbean
- AIA                                     Anguilla                 Caribbean
- ANT                         Netherlands Antilles                 Caribbean
- ASM                               American Samoa                 Polynesia
- ATA                                   Antarctica                Antarctica
- ATF                  French Southern territories                Antarctica
- BMU                                      Bermuda             North America
- BVT                                Bouvet Island                Antarctica
- CCK                      Cocos (Keeling) Islands Australia and New Zealand
- COK                                 Cook Islands                 Polynesia
- CXR                             Christmas Island Australia and New Zealand
- CYM                               Cayman Islands                 Caribbean
- ESH                               Western Sahara           Northern Africa
- FLK                             Falkland Islands             South America
- FRO                                Faroe Islands          Nordic Countries
- GIB                                    Gibraltar           Southern Europe
- GLP                                   Guadeloupe                 Caribbean
- GRL                                    Greenland             North America
- GUF                                French Guiana             South America
- GUM                                         Guam                Micronesia
- HKG                                    Hong Kong              Eastern Asia
- HMD            Heard Island and McDonald Islands                Antarctica
- IOT               British Indian Ocean Territory            Eastern Africa
- MAC                                        Macao              Eastern Asia
- MNP                     Northern Mariana Islands                Micronesia
- MSR                                   Montserrat                 Caribbean
- MTQ                                   Martinique                 Caribbean
- MYT                                      Mayotte            Eastern Africa
- NCL                                New Caledonia                 Melanesia
- NFK                               Norfolk Island Australia and New Zealand
- NIU                                         Niue                 Polynesia
- PCN                                     Pitcairn                 Polynesia
- PRI                                  Puerto Rico                 Caribbean
- PSE                                    Palestine               Middle East
- PYF                             French Polynesia                 Polynesia
- REU                                      Réunion            Eastern Africa
- SGS South Georgia and the South Sandwich Islands                Antarctica
- SHN                                 Saint Helena            Western Africa
- SJM                       Svalbard and Jan Mayen          Nordic Countries
- SPM                    Saint Pierre and Miquelon             North America
- TCA                     Turks and Caicos Islands                 Caribbean
- TKL                                      Tokelau                 Polynesia
- TMP                                   East Timor            Southeast Asia
- UMI         United States Minor Outlying Islands      Micronesia/Caribbean
- VGB                      Virgin Islands, British                 Caribbean
- VIR                         Virgin Islands, U.S.                 Caribbean
- WLF                            Wallis and Futuna                 Polynesia
---------------------------------------------------------------------------------
-
-🌎 PAÍSES SIN AÑO DE INDEPENDENCIA REGISTRADO
---------------------------------------------------------------------------------
-Code                                         Name                    Region
- ABW                                        Aruba                 Caribbean
- AIA                                     Anguilla                 Caribbean
- ANT                         Netherlands Antilles                 Caribbean
- ASM                               American Samoa                 Polynesia
- ATA                                   Antarctica                Antarctica
- ATF                  French Southern territories                Antarctica
- BMU                                      Bermuda             North America
- BVT                                Bouvet Island                Antarctica
- CCK                      Cocos (Keeling) Islands Australia and New Zealand
- COK                                 Cook Islands                 Polynesia
- CXR                             Christmas Island Australia and New Zealand
- CYM                               Cayman Islands                 Caribbean
- ESH                               Western Sahara           Northern Africa
- FLK                             Falkland Islands             South America
- FRO                                Faroe Islands          Nordic Countries
- GIB                                    Gibraltar           Southern Europe
- GLP                                   Guadeloupe                 Caribbean
- GRL                                    Greenland             North America
- GUF                                French Guiana             South America
- GUM                                         Guam                Micronesia
- HKG                                    Hong Kong              Eastern Asia
- HMD            Heard Island and McDonald Islands                Antarctica
- IOT               British Indian Ocean Territory            Eastern Africa
- MAC                                        Macao              Eastern Asia
- MNP                     Northern Mariana Islands                Micronesia
- MSR                                   Montserrat                 Caribbean
- MTQ                                   Martinique                 Caribbean
- MYT                                      Mayotte            Eastern Africa
- NCL                                New Caledonia                 Melanesia
- NFK                               Norfolk Island Australia and New Zealand
- NIU                                         Niue                 Polynesia
- PCN                                     Pitcairn                 Polynesia
- PRI                                  Puerto Rico                 Caribbean
- PSE                                    Palestine               Middle East
- PYF                             French Polynesia                 Polynesia
- REU                                      Réunion            Eastern Africa
- SGS South Georgia and the South Sandwich Islands                Antarctica
- SHN                                 Saint Helena            Western Africa
- SJM                       Svalbard and Jan Mayen          Nordic Countries
- SPM                    Saint Pierre and Miquelon             North America
- TCA                     Turks and Caicos Islands                 Caribbean
- TKL                                      Tokelau                 Polynesia
- TMP                                   East Timor            Southeast Asia
- UMI         United States Minor Outlying Islands      Micronesia/Caribbean
- VGB                      Virgin Islands, British                 Caribbean
- VIR                         Virgin Islands, U.S.                 Caribbean
- WLF                            Wallis and Futuna                 Polynesia
---------------------------------------------------------------------------------
-
-🌎 PAÍSES SIN AÑO DE INDEPENDENCIA REGISTRADO
---------------------------------------------------------------------------------
-Code                                         Name                    Region
- ABW                                        Aruba                 Caribbean
- AIA                                     Anguilla                 Caribbean
- ANT                         Netherlands Antilles                 Caribbean
- ASM                               American Samoa                 Polynesia
- ATA                                   Antarctica                Antarctica
- ATF                  French Southern territories                Antarctica
- BMU                                      Bermuda             North America
- BVT                                Bouvet Island                Antarctica
- CCK                      Cocos (Keeling) Islands Australia and New Zealand
- COK                                 Cook Islands                 Polynesia
- CXR                             Christmas Island Australia and New Zealand
- CYM                               Cayman Islands                 Caribbean
- ESH                               Western Sahara           Northern Africa
- FLK                             Falkland Islands             South America
- FRO                                Faroe Islands          Nordic Countries
- GIB                                    Gibraltar           Southern Europe
- GLP                                   Guadeloupe                 Caribbean
- GRL                                    Greenland             North America
- GUF                                French Guiana             South America
- GUM                                         Guam                Micronesia
- HKG                                    Hong Kong              Eastern Asia
- HMD            Heard Island and McDonald Islands                Antarctica
- IOT               British Indian Ocean Territory            Eastern Africa
- MAC                                        Macao              Eastern Asia
- MNP                     Northern Mariana Islands                Micronesia
- MSR                                   Montserrat                 Caribbean
- MTQ                                   Martinique                 Caribbean
- MYT                                      Mayotte            Eastern Africa
- NCL                                New Caledonia                 Melanesia
- NFK                               Norfolk Island Australia and New Zealand
- NIU                                         Niue                 Polynesia
- PCN                                     Pitcairn                 Polynesia
- PRI                                  Puerto Rico                 Caribbean
- PSE                                    Palestine               Middle East
- PYF                             French Polynesia                 Polynesia
- REU                                      Réunion            Eastern Africa
- SGS South Georgia and the South Sandwich Islands                Antarctica
- SHN                                 Saint Helena            Western Africa
- SJM                       Svalbard and Jan Mayen          Nordic Countries
- SPM                    Saint Pierre and Miquelon             North America
- TCA                     Turks and Caicos Islands                 Caribbean
- TKL                                      Tokelau                 Polynesia
- TMP                                   East Timor            Southeast Asia
- UMI         United States Minor Outlying Islands      Micronesia/Caribbean
- VGB                      Virgin Islands, British                 Caribbean
- VIR                         Virgin Islands, U.S.                 Caribbean
- WLF                            Wallis and Futuna                 Polynesia
---------------------------------------------------------------------------------
-
-🌎 PAÍSES SIN AÑO DE INDEPENDENCIA REGISTRADO
---------------------------------------------------------------------------------
-Code                                         Name                    Region
- ABW                                        Aruba                 Caribbean
- AIA                                     Anguilla                 Caribbean
- ANT                         Netherlands Antilles                 Caribbean
- ASM                               American Samoa                 Polynesia
- ATA                                   Antarctica                Antarctica
- ATF                  French Southern territories                Antarctica
- BMU                                      Bermuda             North America
- BVT                                Bouvet Island                Antarctica
- CCK                      Cocos (Keeling) Islands Australia and New Zealand
- COK                                 Cook Islands                 Polynesia
- CXR                             Christmas Island Australia and New Zealand
- CYM                               Cayman Islands                 Caribbean
- ESH                               Western Sahara           Northern Africa
- FLK                             Falkland Islands             South America
- FRO                                Faroe Islands          Nordic Countries
- GIB                                    Gibraltar           Southern Europe
- GLP                                   Guadeloupe                 Caribbean
- GRL                                    Greenland             North America
- GUF                                French Guiana             South America
- GUM                                         Guam                Micronesia
- HKG                                    Hong Kong              Eastern Asia
- HMD            Heard Island and McDonald Islands                Antarctica
- IOT               British Indian Ocean Territory            Eastern Africa
- MAC                                        Macao              Eastern Asia
- MNP                     Northern Mariana Islands                Micronesia
- MSR                                   Montserrat                 Caribbean
- MTQ                                   Martinique                 Caribbean
- MYT                                      Mayotte            Eastern Africa
- NCL                                New Caledonia                 Melanesia
- NFK                               Norfolk Island Australia and New Zealand
- NIU                                         Niue                 Polynesia
- PCN                                     Pitcairn                 Polynesia
- PRI                                  Puerto Rico                 Caribbean
- PSE                                    Palestine               Middle East
- PYF                             French Polynesia                 Polynesia
- REU                                      Réunion            Eastern Africa
- SGS South Georgia and the South Sandwich Islands                Antarctica
- SHN                                 Saint Helena            Western Africa
- SJM                       Svalbard and Jan Mayen          Nordic Countries
- SPM                    Saint Pierre and Miquelon             North America
- TCA                     Turks and Caicos Islands                 Caribbean
- TKL                                      Tokelau                 Polynesia
- TMP                                   East Timor            Southeast Asia
- UMI         United States Minor Outlying Islands      Micronesia/Caribbean
- VGB                      Virgin Islands, British                 Caribbean
- VIR                         Virgin Islands, U.S.                 Caribbean
- WLF                            Wallis and Futuna                 Polynesia
+Code                                         Name     GNP
+ AFG                                  Afghanistan  5976.0
+ AIA                                     Anguilla    63.2
+ AND                                      Andorra  1630.0
+ ANT                         Netherlands Antilles  1941.0
+ ASM                               American Samoa   334.0
+ ATA                                   Antarctica     0.0
+ ATF                  French Southern territories     0.0
+ BIH                       Bosnia and Herzegovina  2841.0
+ BLR                                      Belarus 13714.0
+ BVT                                Bouvet Island     0.0
+ CCK                      Cocos (Keeling) Islands     0.0
+ COK                                 Cook Islands   100.0
+ CXR                             Christmas Island     0.0
+ ESH                               Western Sahara    60.0
+ FLK                             Falkland Islands     0.0
+ FRO                                Faroe Islands     0.0
+ FSM              Micronesia, Federated States of   212.0
+ GIB                                    Gibraltar   258.0
+ GLP                                   Guadeloupe  3501.0
+ GRD                                      Grenada   318.0
+ GRL                                    Greenland     0.0
+ GUF                                French Guiana   681.0
+ HMD            Heard Island and McDonald Islands     0.0
+ IOT               British Indian Ocean Territory     0.0
+ IRQ                                         Iraq 11500.0
+ KIR                                     Kiribati    40.7
+ KNA                        Saint Kitts and Nevis   299.0
+ LBR                                      Liberia  2012.0
+ LCA                                  Saint Lucia   571.0
+ MCO                                       Monaco   776.0
+ MDV                                     Maldives   199.0
+ MHL                             Marshall Islands    97.0
+ MNP                     Northern Mariana Islands     0.0
+ MSR                                   Montserrat   109.0
+ MYT                                      Mayotte     0.0
+ NCL                                New Caledonia  3563.0
+ NFK                               Norfolk Island     0.0
+ NIU                                         Niue     0.0
+ NRU                                        Nauru   197.0
+ PCN                                     Pitcairn     0.0
+ PLW                                        Palau   105.0
+ PRK                                  North Korea  5332.0
+ PSE                                    Palestine  4173.0
+ SDN                                        Sudan 10162.0
+ SGS South Georgia and the South Sandwich Islands     0.0
+ SHN                                 Saint Helena     0.0
+ SJM                       Svalbard and Jan Mayen     0.0
+ SMR                                   San Marino   510.0
+ SOM                                      Somalia   935.0
+ SPM                    Saint Pierre and Miquelon     0.0
+ STP                        Sao Tome and Principe     6.0
+ TCA                     Turks and Caicos Islands    96.0
+ TKL                                      Tokelau     0.0
+ TMP                                   East Timor     0.0
+ TUV                                       Tuvalu     6.0
+ UMI         United States Minor Outlying Islands     0.0
+ VAT                Holy See (Vatican City State)     9.0
+ VCT             Saint Vincent and the Grenadines   285.0
+ VIR                         Virgin Islands, U.S.     0.0
+ WLF                            Wallis and Futuna     0.0
+ YUG                                   Yugoslavia 17000.0
 --------------------------------------------------------------------------------
 
 🌎 PAÍSES SIN JEFE DE ESTADO REGISTRADO
 --------------------------------------------------------------------------------
-Code                                         Name                    Region
- ABW                                        Aruba                 Caribbean
- AIA                                     Anguilla                 Caribbean
- ANT                         Netherlands Antilles                 Caribbean
- ASM                               American Samoa                 Polynesia
- ATA                                   Antarctica                Antarctica
- ATF                  French Southern territories                Antarctica
- BMU                                      Bermuda             North America
- BVT                                Bouvet Island                Antarctica
- CCK                      Cocos (Keeling) Islands Australia and New Zealand
- COK                                 Cook Islands                 Polynesia
- CXR                             Christmas Island Australia and New Zealand
- CYM                               Cayman Islands                 Caribbean
- ESH                               Western Sahara           Northern Africa
- FLK                             Falkland Islands             South America
- FRO                                Faroe Islands          Nordic Countries
- GIB                                    Gibraltar           Southern Europe
- GLP                                   Guadeloupe                 Caribbean
- GRL                                    Greenland             North America
- GUF                                French Guiana             South America
- GUM                                         Guam                Micronesia
- HKG                                    Hong Kong              Eastern Asia
- HMD            Heard Island and McDonald Islands                Antarctica
- IOT               British Indian Ocean Territory            Eastern Africa
- MAC                                        Macao              Eastern Asia
- MNP                     Northern Mariana Islands                Micronesia
- MSR                                   Montserrat                 Caribbean
- MTQ                                   Martinique                 Caribbean
- MYT                                      Mayotte            Eastern Africa
- NCL                                New Caledonia                 Melanesia
- NFK                               Norfolk Island Australia and New Zealand
- NIU                                         Niue                 Polynesia
- PCN                                     Pitcairn                 Polynesia
- PRI                                  Puerto Rico                 Caribbean
- PSE                                    Palestine               Middle East
- PYF                             French Polynesia                 Polynesia
- REU                                      Réunion            Eastern Africa
- SGS South Georgia and the South Sandwich Islands                Antarctica
- SHN                                 Saint Helena            Western Africa
- SJM                       Svalbard and Jan Mayen          Nordic Countries
- SPM                    Saint Pierre and Miquelon             North America
- TCA                     Turks and Caicos Islands                 Caribbean
- TKL                                      Tokelau                 Polynesia
- TMP                                   East Timor            Southeast Asia
- UMI         United States Minor Outlying Islands      Micronesia/Caribbean
- VGB                      Virgin Islands, British                 Caribbean
- VIR                         Virgin Islands, U.S.                 Caribbean
- WLF                            Wallis and Futuna                 Polynesia
+Code       Name               GovernmentForm
+ AND    Andorra Parliamentary Coprincipality
+ ATA Antarctica             Co-administrated
+ SMR San Marino                     Republic
+--------------------------------------------------------------------------------
+
+🌎 PAÍSES SIN CODE2 REGISTRADO
+--------------------------------------------------------------------------------
+Code    Name
+ NAM Namibia
 --------------------------------------------------------------------------------
