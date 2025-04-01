@@ -123,7 +123,7 @@ if 'Capital' in df_country.columns:
 # Redondear  a un decimal la columna 'LifeExpectancy'
 df_country['LifeExpectancy'] = df_country['LifeExpectancy'].round(1)
 
-
+# Transformación y enriquecimiento de datos
 
 # Crear columna EsIndependizado ✅ "Sí" → País con año de independencia registrado. ❌ "No aplica" → País sin independencia registrada.
 df_country.insert(df_country.columns.get_loc("IndepYear") + 1, "EsIndependizado", 
@@ -132,9 +132,27 @@ df_country.insert(df_country.columns.get_loc("IndepYear") + 1, "EsIndependizado"
 # Llenar valores nulos de GNPOld con la mediana de GNP
 df_country['GNPOld'] = df_country['GNPOld'].fillna(df_country['GNP'].median())
 
+# 🔹 Completar los valores nulos en la columna 'HeadOfState' con datos verificados externamente.
 
+# Verificar si se cargó correctamente antes de modificarlo
+if df_country is not None:
+    def jefes_estado_2002(df):
+        jefes_estado_corregidos = {
+            'AND': 'Coprincipe episcopal - Joan-Enric Vives i Sicília y Coprincipe francés -Jacques Chirac',
+            'SMR': '1er semestre - Giuseppe Arzilli y Gian Carlo Venturini y 2do semestre - Roberto Giorgetti y Giovanni Lonfernini'
+        }
+        # Reemplazar los valores nulos en la columna "HeadOfState"
+        df.loc[df["Code"].isin(jefes_estado_corregidos.keys()), "HeadOfState"] = df["Code"].map(jefes_estado_corregidos)
+        return df
+    # Aplicar la función
+    df_country = jefes_estado_2002 (df_country)
 
+# 🔹 Completar el campo Code2 con "NA" para mantener la coherencia del dataset
 
+# Verificar si 'Code2' existe en el DataFrame
+if "Code2" in df_country.columns:
+    # Llenar solo los valores nulos para Namibia con su código correcto
+    df_country.loc[df_country["Code"] == "NAM", "Code2"] = "NA"
 
 # Guardar el CSV transformado
 ruta_salida_country = os.path.join(os.path.dirname(__file__), "..", "datos_csv", "country.csv")
