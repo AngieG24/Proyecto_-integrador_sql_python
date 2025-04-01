@@ -71,7 +71,7 @@ with open(ruta_log, "a", encoding="utf-8") as log:  # "a" para agregar sin sobre
         log.write("\n" + "-" * 80 + "\n")    
 
     # 🔹 Reporte de países sin el nombre del Jefe de Estado
-    df_paises_sin_jefeestado = df_country[df_country["IHeadOfState"].isna()][["Code", "Name", "GovernmentForm"]]
+    df_paises_sin_jefeestado = df_country[df_country["HeadOfState"].isna()][["Code", "Name", "GovernmentForm"]]
     if not df_paises_sin_jefeestado.empty:
         log.write("\n🌎 PAÍSES SIN JEFE DE ESTADO REGISTRADO\n")
         log.write("-" * 80 + "\n")
@@ -110,6 +110,21 @@ if df_city is not None:
 
 "📌 Dataframe COUNTRY"
 
+# Conversión de tipos de datos para mantener coherencia y facilitar análisis
+
+# Cambio de tipo de dato para la columna 'IndepYear' a Int64
+if 'IndepYear' in df_country.columns:
+    df_country['IndepYear'] = df_country['IndepYear'].astype('Int64')
+
+# cambio de tipo de dato para la columna Capital, que muy posiblemente corresponde al ID de la ciudad capital.
+if 'Capital' in df_country.columns:
+    df_country['Capital'] = df_country['Capital'].astype('Int64')
+
+# Redondear  a un decimal la columna 'LifeExpectancy'
+df_country['LifeExpectancy'] = df_country['LifeExpectancy'].round(1)
+
+
+
 # Crear columna EsIndependizado ✅ "Sí" → País con año de independencia registrado. ❌ "No aplica" → País sin independencia registrada.
 df_country.insert(df_country.columns.get_loc("IndepYear") + 1, "EsIndependizado", 
                 np.where(df_country["IndepYear"].isna(), "No aplica", "Sí"))
@@ -119,10 +134,7 @@ df_country['GNPOld'] = df_country['GNPOld'].fillna(df_country['GNP'].median())
 
 
 
-# Cambio de tipo de dato para la columna 'IndepYear' a int
-if 'IndepYear' in df_country.columns:
-    # Llenar NaN con 0 y truncar los valores decimales
-    df_country['IndepYear'] = df['IndepYear'].fillna(0).astype(int)
+
 
 # Guardar el CSV transformado
 ruta_salida_country = os.path.join(os.path.dirname(__file__), "..", "datos_csv", "country.csv")
