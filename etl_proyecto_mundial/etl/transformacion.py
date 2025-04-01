@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+import numpy as np
 
 def cargar_csv(nombre_archivo):
     """
@@ -20,33 +21,110 @@ archivos_csv = ["city.csv", "country.csv", "countrylanguage.csv"]  # Lista de lo
 
 dataframes = {archivo.split(".")[0]: cargar_csv(archivo) for archivo in archivos_csv}
 
+# ---------------------------------------------------------------------------------------------------------------------
+"Elementos clave de la Transformación en mi ETL "
 
-# -----------------------------------------------------------------------------------------------------------------
+"1️⃣ Limpieza de datos"
+"2️⃣ Estandarización y normalización"
+"3️⃣ Enriquecimiento de datos"
+"4️⃣ Creación de nuevas columnas o cálculos derivados"
+# ---------------------------------------------------------------------------------------------------------------------
+
+"🎯 REPORTE DE DATAFRAMES CON NULOS(ANTES DE LA LIMPIEZA)"
+
+# Obtener el DataFrame
+df_city = dataframes.get("city")
+df_country = dataframes.get("country")  
+
+ruta_log = os.path.join(os.path.dirname(__file__), "..", "log_auditoria.txt")
+
+# Verificar si el archivo de log existe
+reporte_existente = os.path.exists(ruta_log)
+
+with open(ruta_log, "a", encoding="utf-8") as log:  # "a" para agregar sin sobrescribir
+    if not reporte_existente:
+        log.write("📋 REGISTRO DE AUDITORÍA DE DATOS\n")
+        log.write("=" * 80 + "\n")
+
+    # 🔹 Reporte de ciudades sin distrito
+    df_ciudades_sin_distrito = df_city[df_city["District"].isna()][["ID", "Name", "CountryCode"]]
+    if not df_ciudades_sin_distrito.empty:
+        log.write("\n🏙️ CIUDADES SIN DISTRITO ANTES DE LA LIMPIEZA\n")
+        log.write("-" * 80 + "\n")
+        log.write(df_ciudades_sin_distrito.to_string(index=False))
+        log.write("\n" + "-" * 80 + "\n")
+
+    # 🔹 Reporte de países sin Independencia registrada
+    df_paises_sin_indep = df_country[df_country["IndepYear"].isna()][["Code", "Name", "Region"]]
+    if not df_paises_sin_indep.empty:
+        log.write("\n🌎 PAÍSES SIN AÑO DE INDEPENDENCIA REGISTRADO\n")
+        log.write("-" * 80 + "\n")
+        log.write(df_paises_sin_indep.to_string(index=False))
+        log.write("\n" + "-" * 80 + "\n")
+
+    # 🔹 Reporte de países sin GNPOld registrada
+    df_paises__sin_gnpold = df_country[df_country["GNPOld"].isna()][["Code", "Name", "GNP"]]
+    if not df_paises__sin_gnpold.empty:
+        log.write("\n🌎 PAÍSES SIN PRODUCTO NACIONAL BRUTO DE PERIODO ANTERIOR (GNPOld) REGISTRADO\n")
+        log.write("-" * 80 + "\n")
+        log.write(df_paises_sin_indep.to_string(index=False))
+        log.write("\n" + "-" * 80 + "\n")    
+
+    # 🔹 Reporte de países sin el nombre del Jefe de Estado
+    df_paises_sin_jefeestado = df_country[df_country["IHeadOfState"].isna()][["Code", "Name", "GovernmentForm"]]
+    if not df_paises_sin_jefeestado.empty:
+        log.write("\n🌎 PAÍSES SIN JEFE DE ESTADO REGISTRADO\n")
+        log.write("-" * 80 + "\n")
+        log.write(df_paises_sin_indep.to_string(index=False))
+        log.write("\n" + "-" * 80 + "\n")
+
+print(f"\n✅ Reporte actualizado en: {ruta_log}")
+
+# ----------------------------------------------------------------------------------------------------------------------
+"📌 Dataframe CITY"
+
 # 🔹 Completar los valores nulos en la columna 'District' con datos verificados externamente.
 # Se utiliza un diccionario con las correcciones y la función map() para asignar los valores correspondientes.
 
-# Obtener el DataFrame de city
-df_city = dataframes.get("city")  
-
 # Verificar si se cargó correctamente antes de modificarlo
 if df_city is not None:
-# Definir los valores correctos para los distritos
-
     def corregir_distritos(df):
-
         distritos_corregidos = {
             3285: "Taiwan Province",
             3293: "Kaohsiung",
             3294: "Taoyuan",
             3563: "Zulia"
         }
-    # Reemplazar los valores nulos en la columna "District"
-        df.loc[df_city["ID"].isin(distritos_corregidos.keys()), "District"] = df_city["ID"].map(distritos_corregidos)
+        # Reemplazar los valores nulos en la columna "District"
+        df.loc[df["ID"].isin(distritos_corregidos.keys()), "District"] = df["ID"].map(distritos_corregidos)
+        return df
 
+    # Aplicar la función
     df_city = corregir_distritos(df_city)
 
     # Guardar el CSV transformado
-    ruta_salida = os.path.join(os.path.dirname(__file__), "..", "datos_csv", "city.csv")
-    df_city.to_csv(ruta_salida, index=False)
-    print(f"\n✅ Archivo actualizado y guardado en: {ruta_salida}")
+    ruta_salida_city = os.path.join(os.path.dirname(__file__), "..", "datos_csv", "city.csv")
+    df_city.to_csv(ruta_salida_city, index=False)
+    print(f"\n✅ Limpieza de datos df CITY: Archivo actualizado y guardado en: {ruta_salida_city}")
 
+
+"📌 Dataframe COUNTRY"
+
+# Crear columna EsIndependizado ✅ "Sí" → País con año de independencia registrado. ❌ "No aplica" → País sin independencia registrada.
+df_country.insert(df_country.columns.get_loc("IndepYear") + 1, "EsIndependizado", 
+                np.where(df_country["IndepYear"].isna(), "No aplica", "Sí"))
+
+# Llenar valores nulos de GNPOld con la mediana de GNP
+df_country['GNPOld'] = df_country['GNPOld'].fillna(df_country['GNP'].median())
+
+
+
+# Cambio de tipo de dato para la columna 'IndepYear' a int
+if 'IndepYear' in df_country.columns:
+    # Llenar NaN con 0 y truncar los valores decimales
+    df_country['IndepYear'] = df['IndepYear'].fillna(0).astype(int)
+
+# Guardar el CSV transformado
+ruta_salida_country = os.path.join(os.path.dirname(__file__), "..", "datos_csv", "country.csv")
+df_country.to_csv(ruta_salida_country, index=False)
+print(f"\n✅ Limpieza de datos df COUNTRY: Archivo actualizado y guardado en: {ruta_salida_country}")
