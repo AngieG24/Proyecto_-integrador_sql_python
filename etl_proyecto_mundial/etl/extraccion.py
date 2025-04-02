@@ -14,12 +14,14 @@ from etl_proyecto_mundial.config import MYSQL_CONFIG
 # Agregar la carpeta raíz al sys.path para evitar problemas de importación
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
+""" Extrae los datos de todas las tablas de la base de datos 'world'y los guarda en archivos CSV en la carpeta 'datos_csv'."""
+
 # Definir la carpeta donde se guardarán los CSV
 ruta_carpeta_csv = os.path.join(os.path.dirname(__file__), "..", "datos_csv")
 os.makedirs(ruta_carpeta_csv, exist_ok=True)  # Crear carpeta si no existe
 
 def extraer_datos():
-    """ Extrae los datos de todas las tablas de la base de datos 'world'y los guarda en archivos CSV en la carpeta 'datos_csv'."""
+   
     try:
         # Conectar a MySQL
         conexion = mysql.connector.connect(**MYSQL_CONFIG)
