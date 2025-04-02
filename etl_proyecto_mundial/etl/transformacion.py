@@ -29,66 +29,10 @@ dataframes = {archivo.split(".")[0]: cargar_csv(archivo) for archivo in archivos
 "3️⃣ Enriquecimiento de datos"
 "4️⃣ Creación de nuevas columnas o cálculos derivados"
 # ---------------------------------------------------------------------------------------------------------------------
-
-"🎯 REPORTE DE DATAFRAMES CON NULOS(ANTES DE LA LIMPIEZA)"
-
 # Obtener el DataFrame
 df_city = dataframes.get("city")
 df_country = dataframes.get("country")  
 
-ruta_log = os.path.join(os.path.dirname(__file__), "..", "log_auditoria.txt")
-
-# Verificar si el archivo de log existe
-reporte_existente = os.path.exists(ruta_log)
-
-with open(ruta_log, "a", encoding="utf-8") as log:  # "a" para agregar sin sobrescribir
-    if not reporte_existente:
-        log.write("📋 REGISTRO DE AUDITORÍA DE DATOS\n")
-        log.write("=" * 80 + "\n")
-
-    # 🔹 Reporte de ciudades sin distrito
-    df_ciudades_sin_distrito = df_city[df_city["District"].isna()][["ID", "Name", "CountryCode"]]
-    if not df_ciudades_sin_distrito.empty:
-        log.write("\n🏙️ CIUDADES SIN DISTRITO ANTES DE LA LIMPIEZA\n")
-        log.write("-" * 80 + "\n")
-        log.write(df_ciudades_sin_distrito.to_string(index=False))
-        log.write("\n" + "-" * 80 + "\n")
-
-    # 🔹 Reporte de países sin Independencia registrada
-    df_paises_sin_indep = df_country[df_country["IndepYear"].isna()][["Code", "Name", "Region"]]
-    if not df_paises_sin_indep.empty:
-        log.write("\n🌎 PAÍSES SIN AÑO DE INDEPENDENCIA REGISTRADO\n")
-        log.write("-" * 80 + "\n")
-        log.write(df_paises_sin_indep.to_string(index=False))
-        log.write("\n" + "-" * 80 + "\n")
-
-    # 🔹 Reporte de países sin GNPOld registrada
-    df_paises__sin_gnpold = df_country[df_country["GNPOld"].isna()][["Code", "Name", "GNP"]]
-    if not df_paises__sin_gnpold.empty:
-        log.write("\n🌎 PAÍSES SIN PRODUCTO NACIONAL BRUTO DE PERIODO ANTERIOR (GNPOld) REGISTRADO\n")
-        log.write("-" * 80 + "\n")
-        log.write(df_paises__sin_gnpold.to_string(index=False))
-        log.write("\n" + "-" * 80 + "\n")    
-
-    # 🔹 Reporte de países sin el nombre del Jefe de Estado
-    df_paises_sin_jefeestado = df_country[df_country["HeadOfState"].isna()][["Code", "Name", "GovernmentForm"]]
-    if not df_paises_sin_jefeestado.empty:
-        log.write("\n🌎 PAÍSES SIN JEFE DE ESTADO REGISTRADO\n")
-        log.write("-" * 80 + "\n")
-        log.write(df_paises_sin_jefeestado.to_string(index=False))
-        log.write("\n" + "-" * 80 + "\n")
-
-    # 🔹 Reporte de países sin Code 2 de Estado
-    df_paises_sin_code2 = df_country[df_country["Code2"].isna()][["Code", "Name"]]
-    if not df_paises_sin_code2.empty:
-        log.write("\n🌎 PAÍSES SIN CODE2 REGISTRADO\n")
-        log.write("-" * 80 + "\n")
-        log.write(df_paises_sin_code2.to_string(index=False))
-        log.write("\n" + "-" * 80 + "\n")
-
-print(f"\n✅ Reporte actualizado en: {ruta_log}")
-
-# ----------------------------------------------------------------------------------------------------------------------
 "📌 Dataframe CITY"
 
 # 🔹 Completar los valores nulos en la columna 'District' con datos verificados externamente.
@@ -109,11 +53,6 @@ if df_city is not None:
 
     # Aplicar la función
     df_city = corregir_distritos(df_city)
-
-    # Guardar el CSV transformado
-    ruta_salida_city = os.path.join(os.path.dirname(__file__), "..", "datos_csv", "city.csv")
-    df_city.to_csv(ruta_salida_city, index=False)
-    print(f"\n✅ Limpieza de datos df CITY: Archivo actualizado y guardado en: {ruta_salida_city}")
 
 
 "📌 Dataframe COUNTRY"
@@ -165,7 +104,3 @@ def corregir_code2(df):
 # Aplicar la función al DataFrame
 df_country = corregir_code2(df_country)
 
-# Guardar el CSV transformado
-ruta_salida_country = os.path.join(os.path.dirname(__file__), "..", "datos_csv", "country.csv")
-df_country.to_csv(ruta_salida_country, index=False)
-print(f"\n✅ Limpieza de datos df COUNTRY: Archivo actualizado y guardado en: {ruta_salida_country}")

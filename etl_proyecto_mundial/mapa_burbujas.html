@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cdefa8a961f3bbb0ee8f0e650f4647ee {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cdefa8a961f3bbb0ee8f0e650f4647ee" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cdefa8a961f3bbb0ee8f0e650f4647ee = L.map(
+                "map_cdefa8a961f3bbb0ee8f0e650f4647ee",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d942b006aeb179320c8991138cbdca0e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d942b006aeb179320c8991138cbdca0e.addTo(map_cdefa8a961f3bbb0ee8f0e650f4647ee);
+        
+    
+            var circle_marker_40379e7cc8547d3d31dcc2852701abbe = L.circleMarker(
+                [55.7558, 37.6173],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.0754, "stroke": true, "weight": 3}
+            ).addTo(map_cdefa8a961f3bbb0ee8f0e650f4647ee);
+        
+    
+        var popup_530939ec1b9c12b73f648a9b3bed972d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b2c2ee080af3f7ebb41dcf523d4b6da = $(`<div id="html_6b2c2ee080af3f7ebb41dcf523d4b6da" style="width: 100.0%; height: 100.0%;">Russian Federation: 17075400 km²</div>`)[0];
+                popup_530939ec1b9c12b73f648a9b3bed972d.setContent(html_6b2c2ee080af3f7ebb41dcf523d4b6da);
+            
+        
+
+        circle_marker_40379e7cc8547d3d31dcc2852701abbe.bindPopup(popup_530939ec1b9c12b73f648a9b3bed972d)
+        ;
+
+        
+    
+    
+            var circle_marker_1103e162bcb60f42f28346ae7fdd3a76 = L.circleMarker(
+                [-82.8628, 135.0],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.12, "stroke": true, "weight": 3}
+            ).addTo(map_cdefa8a961f3bbb0ee8f0e650f4647ee);
+        
+    
+        var popup_ef8bc174d2ac41aa2187e808e8eb6793 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_735b1ca896626d98d2ef8039e269f304 = $(`<div id="html_735b1ca896626d98d2ef8039e269f304" style="width: 100.0%; height: 100.0%;">Antarctica: 13120000 km²</div>`)[0];
+                popup_ef8bc174d2ac41aa2187e808e8eb6793.setContent(html_735b1ca896626d98d2ef8039e269f304);
+            
+        
+
+        circle_marker_1103e162bcb60f42f28346ae7fdd3a76.bindPopup(popup_ef8bc174d2ac41aa2187e808e8eb6793)
+        ;
+
+        
+    
+    
+            var circle_marker_a17256a09911415f39082f2a0375cc61 = L.circleMarker(
+                [56.1304, -106.3468],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.97061, "stroke": true, "weight": 3}
+            ).addTo(map_cdefa8a961f3bbb0ee8f0e650f4647ee);
+        
+    
+        var popup_b0d28f36b7641287a82dc5158b1e6a8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_539dfa35e0ef2d8139c6bad7a81e3c78 = $(`<div id="html_539dfa35e0ef2d8139c6bad7a81e3c78" style="width: 100.0%; height: 100.0%;">Canada: 9970610 km²</div>`)[0];
+                popup_b0d28f36b7641287a82dc5158b1e6a8d.setContent(html_539dfa35e0ef2d8139c6bad7a81e3c78);
+            
+        
+
+        circle_marker_a17256a09911415f39082f2a0375cc61.bindPopup(popup_b0d28f36b7641287a82dc5158b1e6a8d)
+        ;
+
+        
+    
+    
+            var circle_marker_c432fcebf3ae552e12466b560656ec59 = L.circleMarker(
+                [35.8617, 104.1954],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.5729, "stroke": true, "weight": 3}
+            ).addTo(map_cdefa8a961f3bbb0ee8f0e650f4647ee);
+        
+    
+        var popup_4971f5eb104f8cc7a1a7ce98df09b14e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b2968d048108fe73908d7a01bc0d658 = $(`<div id="html_1b2968d048108fe73908d7a01bc0d658" style="width: 100.0%; height: 100.0%;">China: 9572900 km²</div>`)[0];
+                popup_4971f5eb104f8cc7a1a7ce98df09b14e.setContent(html_1b2968d048108fe73908d7a01bc0d658);
+            
+        
+
+        circle_marker_c432fcebf3ae552e12466b560656ec59.bindPopup(popup_4971f5eb104f8cc7a1a7ce98df09b14e)
+        ;
+
+        
+    
+    
+            var circle_marker_9d4ee22c0c11292cb5265d341b75a6f8 = L.circleMarker(
+                [37.0902, -95.7129],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.36352, "stroke": true, "weight": 3}
+            ).addTo(map_cdefa8a961f3bbb0ee8f0e650f4647ee);
+        
+    
+        var popup_a1a8884226a4268039d633ef4d9cf08d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_058f54f73bcc5886470b45ffddfff785 = $(`<div id="html_058f54f73bcc5886470b45ffddfff785" style="width: 100.0%; height: 100.0%;">United States: 9363520 km²</div>`)[0];
+                popup_a1a8884226a4268039d633ef4d9cf08d.setContent(html_058f54f73bcc5886470b45ffddfff785);
+            
+        
+
+        circle_marker_9d4ee22c0c11292cb5265d341b75a6f8.bindPopup(popup_a1a8884226a4268039d633ef4d9cf08d)
+        ;
+
+        
+    
+</script>
+</html>
