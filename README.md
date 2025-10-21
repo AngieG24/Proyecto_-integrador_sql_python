@@ -1,10 +1,10 @@
-Introducción 🚀
+## Introducción 🚀
 
 
 Este proyecto ETL (Extracción, Transformación y Carga) tiene como objetivo procesar los datos de la base de datos "world" de MySQL y analizarlos en Python. La implementación se realizó en Visual Studio Code (VS Code) para el desarrollo del código y Jupyter Notebook para la exploración visual de
 los datos.
 
-Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - Python: Lenguaje principal para la automatización del proceso ETL.
 - MySQL: Base de datos relacional utilizada como fuente de datos.
@@ -20,34 +20,35 @@ Tecnologías Utilizadas
 - Git & GitHub: Para control de versiones y colaboración.
 
 
-Estructura del Proyecto 📂
+##Estructura del Proyecto 📂
+
 El proyecto está estructurado en los siguientes archivos y carpetas: 
 ├── etl_proyecto_mundial/
 │ ├── etl/
 │ │ ├──
 extraccion.py
-# 📥 Módulo de extracción de datos desde MySQL
+#### 📥 Módulo de extracción de datos desde MySQL
 │ │ ├──
 transformacion.py
-# 🔄Procesamiento y limpieza de datos
+####  🔄Procesamiento y limpieza de datos
 │ │ ├──
 carga.py
-# 📤 Exportación a CSV
+####  📤 Exportación a CSV
 │ ├──
 config.py
-# 📌Configuración de conexión a MySQL
+####  📌Configuración de conexión a MySQL
 │ ├──
 main.py
-# ▶️ Script principal de ejecución
+#### ▶️ Script principal de ejecución
 │ ├── datos_csv/ # 📁 Carpeta donde se guardan los archivos CSV
 │ ├── world/ # Carpeta con las tablas de la base de datos world
 │ ├── Exploración.ipynb # 📊Notebook para análisis exploratorio
 │ ├──
 README.md
-# Documentación general del proyecto
+#### Documentación general del proyecto
 
 
-Conclusión 🎯
+## Conclusión 🎯
 
 Este proyecto demuestra cómo estructurar un proceso ETL de manera modular y profesional, asegurando la reutilización del código y facilitando su mantenimiento.
 ✅ La separación de la conexión en
